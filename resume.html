@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Durga Manasa Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .glass {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+    }
+
+    .fade-in {
+      animation: fadeInUp 1s ease-out forwards;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white font-sans">
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center px-4 fade-in">
+    <div class="glass p-10 max-w-2xl w-full">
+      <h1 class="text-5xl md:text-6xl font-bold text-blue-400 animate-pulse">Durga Manasa Nadakuduru</h1>
+      <p class="mt-4 text-lg md:text-xl">Aspiring Software Engineer | Final Year B.Tech CSE Student</p>
+      <div class="mt-6 flex flex-wrap justify-center gap-4">
+        <a href="resume.pdf" download class="px-5 py-2 bg-blue-600 rounded hover:bg-blue-700 transition">📄 Download Resume</a>
+        <a href="#contact" class="px-5 py-2 border border-white rounded hover:bg-white hover:text-black transition">📬 Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="p-8 fade-in">
+    <div class="glass p-6 max-w-3xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-4 text-blue-300">About Me</h2>
+      <p>I’m passionate about building user-friendly web applications and solving real-world problems through code. Currently pursuing my B.Tech in Computer Science, I aim to become a skilled software engineer.</p>
+      <p class="mt-2">📧 Email: <a href="mailto:durgamanasanadakuduru@gmail.com" class="text-blue-400 hover:underline">durgamanasanadakuduru@gmail.com</a></p>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="p-8 fade-in">
+    <div class="glass p-6 max-w-3xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-4 text-blue-300">Education</h2>
+      <ul class="space-y-2 list-disc list-inside">
+        <li><strong>B.Tech – CSE</strong>, Eluru College – 65%</li>
+        <li><strong>Intermediate (MPC)</strong>, Sri Chaitanya – 87%</li>
+        <li><strong>SSC</strong>, ZPHS Vijayarai – 95%</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="p-8 fade-in">
+    <div class="glass p-6 max-w-3xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-4 text-blue-300">Technical Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
+        <div class="bg-gray-700 p-2 rounded">HTML</div>
+        <div class="bg-gray-700 p-2 rounded">C</div>
+        <div class="bg-gray-700 p-2 rounded">Python</div>
+        <div class="bg-gray-700 p-2 rounded">VS Code</div>
+        <div class="bg-gray-700 p-2 rounded">GitHub</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="p-8 fade-in">
+    <div class="glass p-6 max-w-3xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-4 text-blue-300">Contact Me</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-3 rounded bg-gray-700 text-white" />
+        <input type="email" placeholder="Your Email" class="w-full p-3 rounded bg-gray-700 text-white" />
+        <textarea placeholder="Your Message" class="w-full p-3 rounded bg-gray-700 text-white"></textarea>
+        <button type="submit" class="px-5 py-2 bg-blue-600 rounded hover:bg-blue-700 transition">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center p-4 bg-gray-900 text-gray-400">
+    © 2025 Durga Manasa Nadakuduru
+  </footer>
+
+</body>
+</html>
