@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Durga Manasa Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: transform 0.4s ease;
+    }
+
+    .glass:hover {
+      transform: scale(1.02);
+    }
+
+    .glow-hover:hover {
+      box-shadow: 0 0 10px rgba(0, 123, 255, 0.6);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center px-4" data-aos="fade-up">
+    <div class="glass p-10 max-w-2xl w-full glow-hover">
+      <h1 class="text-5xl md:text-6xl font-bold text-blue-400 animate-pulse">Durga Manasa Nadakuduru</h1>
+      <p class="mt-4 text-lg md:text-xl">Aspiring Software Engineer | Final Year B.Tech CSE Student</p>
+      <div class="mt-6 flex flex-wrap justify-center gap-4">
+        <a href="resume.pdf" download class="px-5 py-2 bg-blue-600 rounded hover:bg-blue-700 transition glow-hover">📄 Download Resume</a>
+        <a href="#contact" class="px-5 py-2 border border-white rounded hover:bg-white hover:text-black transition glow-hover">📬 Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="p-8" data-aos="fade-right">
+    <div class="glass p-6 max-w-3xl mx-auto glow-hover">
+      <h2 class="text-3xl font-semibold mb-4 text-blue-300">About Me</h2>
+      <p>I’m passionate about building user-friendly web applications and solving real-world problems through code. Currently pursuing my B.Tech in Computer Science, I aim to become a skilled software engineer.</p>
+      <p class="mt-2">📧 Email: <a href="mailto:durgamanasanadakuduru@gmail.com" class="text-blue-400 hover:underline">durgamanasanadakuduru@gmail.com</a></p>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="p-8" data-aos="zoom-in">
+    <div class="glass p-6 max-w-3xl mx-auto glow-hover">
+      <h2 class="text-3xl font-semibold mb-4 text-blue-300">Education</h2>
+      <ul class="list-disc list-inside space-y-2 text-lg">
+        <li><strong>B.Tech – CSE</strong>, Eluru College – 65%</li>
+        <li><strong>Intermediate (MPC)</strong>, Sri Chaitanya – 87%</li>
+        <li><strong>SSC</strong>, ZPHS Vijayarai – 95%</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="p-8" data-aos="fade-left">
+    <div class="glass p-6 max-w-3xl mx-auto glow-hover">
+      <h2 class="text-3xl font-semibold mb-4 text-blue-300">Technical Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
+        <div class="bg-gray-700 p-2 rounded glow-hover">HTML</div>
+        <div class="bg-gray-700 p-2 rounded glow-hover">C</div>
+        <div class="bg-gray-700 p-2 rounded glow-hover">Python</div>
+        <div class="bg-gray-700 p-2 rounded glow-hover">VS Code</div>
+        <div class="bg-gray-700 p-2 rounded glow-hover">GitHub</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="p-8" data-aos="fade-up">
+    <div class="glass p-6 max-w-3xl mx-auto glow-hover">
+      <h2 class="text-3xl font-semibold mb-4 text-blue-300">Projects</h2>
+      <ul class="list-disc list-inside space-y-2 text-lg">
+        <li><strong>Portfolio Website</strong><br/>Designed and developed using HTML, showcasing academic and internship experience.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Internships -->
+  <section class="p-8" data-aos="flip-left">
+    <div class="glass p-6 max-w-3xl mx-auto glow-hover">
+      <h2 class="text-3xl font-semibold mb-4 text-blue-300">Internships</h2>
+      <ul class="list-disc list-inside space-y-4 text-lg">
+        <li><strong>Web Full Stack Developer – Virtual Internship</strong><br/>Built web pages and learned full-stack fundamentals.</li>
+        <li><strong>AI/ML Virtual Internship</strong><br/>Implemented basic ML models and supervised learning.</li>
+        <li><strong>Google Android Developer Virtual Internship</strong><br/>Explored mobile UI components and app structure.</li>
+        <li><strong>Altair Data Science Master Internship</strong><br/>Gained hands-on exposure to data analysis tools.</li>
+        <li><strong>Palo Alto Cybersecurity Internship</strong><br/>Learned network security basics and threat intelligence.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="p-8" data-aos="fade-up">
+    <div class="glass p-6 max-w-3xl mx-auto glow-hover">
+      <h2 class="text-3xl font-semibold mb-4 text-blue-300">Contact Me</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-3 rounded bg-gray-700 text-white glow-hover" />
+        <input type="email" placeholder="Your Email" class="w-full p-3 rounded bg-gray-700 text-white glow-hover" />
+        <textarea placeholder="Your Message" class="w-full p-3 rounded bg-gray-700 text-white glow-hover"></textarea>
+        <button type="submit" class="px-5 py-2 bg-blue-600 rounded hover:bg-blue-700 transition glow-hover">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center p-4 bg-gray-900 text-gray-400">
+    © 2025 Durga Manasa Nadakuduru
+  </footer>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+    });
+  </script>
+</body>
+</html>
